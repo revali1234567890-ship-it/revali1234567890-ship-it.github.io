@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReBurn: Dieta Mental - Transforma tu Identidad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Configuración de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Verde principal de la marca
+                        brand: {
+                            DEFAULT: '#00A86B',
+                            light: '#00C07A',
+                        },
+                        // Gris oscuro secundario
+                        dark: {
+                            DEFAULT: '#1C1C1C',
+                            light: '#2A2A2A',
+                        }
+                    },
+                    fontFamily: {
+                        // Inter para cuerpo de texto (font-sans)
+                        sans: ['Inter', 'sans-serif'],
+                        // Montserrat para títulos (font-display)
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    
+    <style>
+        /* Aplicar fuentes base */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800; /* Bold para títulos */
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+    <!-- ===== Header ===== -->
+    <header class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" fill="#00A86B"/>
+                    <circle cx="20" cy="20" r="10" fill="#000000"/>
+                </svg>
+                <span class="font-display font-bold text-2xl">ReBurn</span>
+            </a>
+            
+            <!-- CTA Principal -->
+            <a href="#unete" class="bg-brand text-black font-sans font-bold py-2 px-5 rounded-lg text-sm transition-transform hover:scale-105 hover:bg-brand-light">
+                Únete a la App
+            </a>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+
+        <!-- ===== Hero Section ===== -->
+        <section class="container mx-auto px-4 pt-20 pb-24 text-center">
+            <div class="max-w-3xl mx-auto">
+                <!-- Subtítulo de dolor -->
+                <p class="font-sans text-brand font-medium mb-4">"Sé lo que tengo que hacer... pero no lo hago."</p>
+                
+                <!-- Título Principal (H1) -->
+                <h1 class="font-display text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                    Deja la motivación.
+                    <br>
+                    Construye tu <span class="text-brand">identidad</span>.
+                </h1>
+                
+                <!-- Descripción -->
+                <p class="font-sans text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                    ReBurn es el sistema paso a paso para trabajadores jóvenes que buscan disciplina interna y claridad mental.
+                    Recupera el control de tu día.
+                </p>
+                
+                <!-- CTA Form (Captura de email) -->
+                <form id="unete" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input 
+                        type="email" 
+                        placeholder="Tu correo electrónico" 
+                        required
+                        class="flex-grow w-full px-5 py-3 rounded-lg bg-dark text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand"
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-brand text-black font-sans font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105 hover:bg-brand-light">
+                        Empezar mi Transformación
+                    </button>
+                </form>
+                <p class="font-sans text-xs text-gray-500 mt-3">Únete a la lista de espera y recibe el newsletter "ReBurn Weekly".</p>
+            </div>
+        </section>
+
+        <!-- ===== Problema (Before) Section ===== -->
+        <section class="py-20 bg-dark">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">¿Vives en este ciclo?</h2>
+                    <p class="font-sans text-lg text-gray-300">
+                        Te sientes atrapado entre la motivación de un día y la frustración de no ser constante. Te hablas mal a ti mismo y sientes que no tienes fuerza de voluntad.
+                    </p>
+                </div>
+                
+                <!-- Grid de Puntos de Dolor -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- Dolor 1 -->
+                    <div class="bg-black rounded-xl p-6 border border-gray-800">
+                        <h3 class="font-display text-xl font-bold mb-2">Hábitos Rotos</h3>
+                        <p class="font-sans text-gray-400">Empiezas el gym, la lectura o tu proyecto con energía, pero caes a los pocos días. Sientes que te falta disciplina.</p>
+                    </div>
+                    <!-- Dolor 2 -->
+                    <div class="bg-black rounded-xl p-6 border border-gray-800">
+                        <h3 class="font-display text-xl font-bold mb-2">Ruido Mental</h3>
+                        <p class="font-sans text-gray-400">Exceso de redes sociales, procrastinación y dopamina baja. Tu mente está cansada y te cuesta concentrarte.</p>
+                    </div>
+                    <!-- Dolor 3 -->
+                    <div class="bg-black rounded-xl p-6 border border-gray-800">
+                        <h3 class="font-display text-xl font-bold mb-2">Autocrítica</h3>
+                        <p class="font-sans text-gray-400">"Soy un vago", "no valgo", "no tengo constancia". Esta es tu conversación interna y te frena cada día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== Solución (After) Section ===== -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    
+                    <!-- Columna de Texto -->
+                    <div class="lg:w-1/2">
+                        <p class="font-sans text-brand font-medium mb-3">LA TRANSFORMACIÓN</p>
+                        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">No compras una app.
+                        <br>Compras una <span class="text-brand">nueva identidad.</span></h2>
+                        <p class="font-sans text-lg text-gray-300 mb-8">
+                            ReBurn no depende de la motivación. Es un sistema de "Dieta Mental" diseñado para instalar hábitos realistas y construir disciplina interna. 
+                            Te ayudamos a convertirte en la persona que cumple lo que dice.
+                        </p>
+                        
+                        <!-- Lista de Beneficios (After) -->
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-sans font-bold text-lg">Rutinas Sólidas</h4>
+                                    <p class="font-sans text-gray-400">Pasa de la pereza a tener un sistema simple que funciona.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-sans font-bold text-lg">Claridad y Enfoque</h4>
+                                    <p class="font-sans text-gray-400">Reduce la carga mental y aprende a gestionar tu energía.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-sans font-bold text-lg">Control y Confianza</h4>
+                                    <p class="font-sans text-gray-400">Siéntete orgulloso de ti mismo y recupera el control de tu vida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna Visual (Mockup de App) -->
+                    <div class="lg:w-1/2 w-full max-w-md mx-auto">
+                        <div class="bg-dark p-4 rounded-3xl border-4 border-gray-800 shadow-2xl">
+                            <!-- Pantalla Falsa de la App -->
+                            <div class="bg-black rounded-2xl p-6 h-[500px] flex flex-col">
+                                <!-- Header de la App -->
+                                <div class="flex justify-between items-center mb-6">
+                                    <div class="flex items-center space-x-2">
+                                        <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" fill="#00A86B"/><circle cx="20" cy="20" r="10" fill="#000000"/></svg>
+                                        <span class="font-display font-bold text-lg">ReBurn</span>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700"></div>
+                                </div>
+                                
+                                <!-- Contenido Mockup -->
+                                <h3 class="font-sans text-gray-400 text-sm mb-2">TU OBJETIVO SIMPLE DEL DÍA</h3>
+                                <div class="bg-dark light p-4 rounded-lg mb-4">
+                                    <p class="font-sans font-medium">Completar 1 ciclo de trabajo enfocado.</p>
+                                </div>
+
+                                <h3 class="font-sans text-gray-400 text-sm mb-2">EVALUACIÓN DIARIA</h3>
+                                <div class="space-y-3 mb-6">
+                                    <p class="font-sans text-sm flex justify-between">Energía <span>7/10</span></p>
+                                    <div class="w-full bg-gray-700 rounded-full h-2"><div class="bg-brand h-2 rounded-full" style="width: 70%"></div></div>
+                                    <p class="font-sans text-sm flex justify-between">Estrés <span>3/10</span></p>
+                                    <div class="w-full bg-gray-700 rounded-full h-2"><div class="bg-brand h-2 rounded-full" style="width: 30%"></div></div>
+                                </div>
+
+                                <h3 class="font-sans text-gray-400 text-sm mb-2">MICRO-HÁBITO DE HOY</h3>
+                                <div class="bg-brand p-4 rounded-lg text-center">
+                                    <p class="font-sans font-bold text-black">Pausa de 5 min: <br> Caminar sin móvil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Features Section (Cómo funciona) ===== -->
+        <section class="py-20 bg-dark">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <p class="font-sans text-brand font-medium mb-3">EL SISTEMA REBURN</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Un método simple y práctico</h2>
+                    <p class="font-sans text-lg text-gray-300">
+                        La app ReBurn es tu compañera diaria para reducir la carga mental y construir la disciplina que buscas, paso a paso.
+                    </p>
+                </div>
+
+                <!-- Grid de Features -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <!-- Feature 1 -->
+                    <div class="bg-black p-6 rounded-xl border border-gray-800 text-center">
+                        <svg class="w-12 h-12 text-brand mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="font-display text-xl font-bold mb-2">Evaluación Diaria</h3>
+                        <p class="font-sans text-sm text-gray-400">Mide tu cansancio, estrés, concentración y ánimo en 30 segundos.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-black p-6 rounded-xl border border-gray-800 text-center">
+                        <svg class="w-12 h-12 text-brand mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="font-display text-xl font-bold mb-2">Micro-Hábitos</h3>
+                        <p class="font-sans text-sm text-gray-400">Recibe acciones simples de descanso y recuperación mental que sí puedes cumplir.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-black p-6 rounded-xl border border-gray-800 text-center">
+                        <svg class="w-12 h-12 text-brand mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        <h3 class="font-display text-xl font-bold mb-2">Reducción de Carga</h3>
+                        <p class="font-sans text-sm text-gray-400">Te ayudamos a organizar objetivos simples y te explicamos cuándo parar.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="bg-black p-6 rounded-xl border border-gray-800 text-center">
+                        <svg class="w-12 h-12 text-brand mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5M1.646 6.81l.006-.006L3 8l-1.354 1.19-.006-.006a1 1 0 000 1.62l.006.006L3 12l-1.354 1.19-.006.006a1 1 0 000 1.62l.006.006L3 16l-1.354 1.19-.006.006a1 1 0 000 1.62l.006.006L3 20l1.354-1.19.006.006a1 1 0 000-1.62l-.006-.006L3 16l1.354-1.19.006-.006a1 1 0 000-1.62l-.006-.006L3 12l1.354-1.19.006-.006a1 1 0 000-1.62l-.006-.006L3 8l1.354-1.19.006-.006a1 1 0 000-1.62L3.006 3.994 3 4l-1.354 1.19-.006.006a1 1 0 000 1.62zM22.354 6.81l-.006-.006L21 8l1.354 1.19.006-.006a1 1 0 010 1.62l-.006.006L21 12l1.354 1.19.006.006a1 1 0 010 1.62l-.006.006L21 16l1.354 1.19.006.006a1 1 0 010 1.62l-.006.006L21 20l-1.354-1.19-.006-.006a1 1 0 010-1.62l.006-.006L21 16l-1.354-1.19-.006-.006a1 1 0 010-1.62l.006-.006L21 12l-1.354-1.19-.006-.006a1 1 0 010-1.62l.006-.006L21 8l-1.354-1.19-.006-.006a1 1 0 010-1.62l.006-.006L21 4l1.354 1.19.006.006a1 1 0 010 1.62z"></path></svg>
+                        <h3 class="font-display text-xl font-bold mb-2">Comunidad</h3>
+                        <p class="font-sans text-sm text-gray-400">Acceso al newsletter "ReBurn Weekly" con tips, rutinas e historias reales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Final CTA Section ===== -->
+        <section class="py-24">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <svg class="w-16 h-16 mx-auto mb-6" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="#00A86B"/>
+                        <circle cx="20" cy="20" r="10" fill="#000000"/>
+                    </svg>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                        Empieza tu <span class="text-brand">evolución</span>.
+                    </h2>
+                    <p class="font-sans text-lg text-gray-300 mb-10">
+                        Únete a la lista de espera de ReBurn. Sé el primero en acceder a la app y recibe cada semana el newsletter con herramientas mentales para construir tu nueva identidad.
+                    </p>
+                    
+                    <!-- CTA Form (Repetido para conversión) -->
+                    <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                        <input 
+                            type="email" 
+                            placeholder="Tu correo electrónico" 
+                            required
+                            class="flex-grow w-full px-5 py-3 rounded-lg bg-dark text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand"
+                        >
+                        <button 
+                            type="submit" 
+                            class="bg-brand text-black font-sans font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105 hover:bg-brand-light">
+                            Unirme ahora
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-dark border-t border-gray-800">
+        <div class="container mx-auto px-4 py-8 text-center">
+            <p class="font-sans text-sm text-gray-500">
+                © 2025 ReBurn. Disciplina. Identidad. Evolución.
+            </p>
+            <!-- Aquí irían enlaces a redes sociales si los tuvieras -->
+        </div>
+    </footer>
+
+</body>
+</html>
